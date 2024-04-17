@@ -17,10 +17,10 @@ const SucessosContainer = styled.div`
         font-size: 14px;
         height: 65vh;
         background-color: #141414;
+        overflow: hidden;
     }
 `
 const StyledSwiper = styled(Swiper)`
-    border: red;
     width: 65%;
 
     img{
@@ -31,6 +31,7 @@ const StyledSwiper = styled(Swiper)`
     @media (max-width: 768px){
        width: 320%;
        padding-left: 1rem;
+       overflow: hidden;
         
         img{
             width: 55vw;

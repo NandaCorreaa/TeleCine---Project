@@ -1,8 +1,8 @@
 import Header from "./Header"
 import ImagemDuplaTelecine from '../Imgs/ImagemDuplaTelecine.jpg'
+import ImagemDuplaTelecineMobile from '../Imgs/ImagemDuplaTelecineMobile.jpg'
 import Footer from "./Footer"
 import styled from "styled-components"
-import Duvidas from "./Duvidas"
 
 const DuplaContainer = styled.section`
     color: aliceblue;
@@ -26,7 +26,10 @@ const DuplaContainer = styled.section`
         width: 62%;
         color: #b8b8bc;
         font-size: 17px;   
+    } 
     }
+    .imgResponsive{
+        display: none;
     }
 
     @media (max-width: 768px){
@@ -40,7 +43,16 @@ const DuplaContainer = styled.section`
             }
         }
         img{
-            width: 140%;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .imgResponsive{
+            display: flex;
+            height: 90vh;
+        }
+        .imgDesk{
+            display: none;
         }
     }
 `
@@ -54,7 +66,8 @@ export default function DuplaTelecine(){
                         <p>Só quem é assinante Telecine ganha ingresso em dobro no Kinoplex para curtir um cineminha em ótima companhia, com tecnologia e conforto ao máximo. É isso aí! Na compra de uma meia, você ganha outra e, na compra de uma inteira, você recebe outra inteira. E o melhor: esse benefício é válido para todas as sessões, salas e horários da rede Kinoplex,* e pode ser utilizado uma vez por mês. Consulte aqui o regulamento.</p>
                         <p>Para aproveitar é só seguir o passo a passo:</p>
                     </div>
-                    <img src={ImagemDuplaTelecine} alt="" />
+                    <img className="imgDesk" src={ImagemDuplaTelecine} alt="" />
+                    <img className="imgResponsive" src={ImagemDuplaTelecineMobile} alt="" />
                 </DuplaContainer>
             <Footer/>
         </>
