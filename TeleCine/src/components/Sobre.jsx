@@ -45,7 +45,7 @@ const SobreContainer = styled.section`
 export default function Sobre() { 
     return(
         <SobreContainer>
-            <iframe width="492" height="277" src="https://www.youtube.com/embed/OBI7ceFhksA?si=N_o64Jn2CW2TQpJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="492" height="277" src="https://www.youtube.com/embed/OBI7ceFhksA?si=N_o64Jn2CW2TQpJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <div>
                 <p>Líder e referência em filmes, o Telecine leva a magia do cinema para perto de você. Nosso conteúdo está disponível 24h nos nossos 6 canais de TV e também em streaming para transformar seu momento cinema em uma experiência cada vez mais completa.</p>
                 <p>Aqui, todos os títulos do catálogo são selecionados por um time de especialistas apaixonados por cinema. Você curte clássicos dos grandes estúdios, do mercado independente e nacional, além de filmes inéditos e estreias exclusivas. </p>
